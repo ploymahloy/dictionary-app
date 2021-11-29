@@ -7,7 +7,7 @@ export default function App() {
 
   const [userInput, setUserInput]       = useState("");
   const [word, setWord]                 = useState("Dictionary App");
-  const [partOfSpeech, setPartOfSpeech] = useState("power by dictionaryapi");
+  const [partOfSpeech, setPartOfSpeech] = useState("powered by Dictionary API");
   const [definition, setDefinition]     = useState("Please search for a word to be defined above!");
 
   const getVal = (val: { target: { value: any; }; }) => {
@@ -17,13 +17,12 @@ export default function App() {
   const getDefinition = () => {
     axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${userInput}`)
       .then((res) => {
-        console.log(res.data[0].meanings[0].partOfSpeech)
         setWord(res.data[0].word);
         setPartOfSpeech(res.data[0].meanings[0].partOfSpeech);
         setDefinition(res.data[0].meanings[0].definitions[0].definition);
       })
       .catch((err) => {
-        alert('Error! Check spelling');
+        alert('Error! Word not found.');
       });
   };
 

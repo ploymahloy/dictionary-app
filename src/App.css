@@ -35,17 +35,17 @@ input {
 }
 
 .define {
-  font-size: 30px;
+  font-size: 20px;
+  padding: 10px 50px 10px 50px;
 
-  border: 2px solid white;
-  border-radius: 10px;
-  
-  background-color: rgb(15, 72, 99);
-  color: rgb(101, 196, 224);
+  border: unset;
+
+  background-color: rgb(101, 196, 224);
+  color: rgb(238, 238, 238);
 }
 
 .display {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 h1 {
