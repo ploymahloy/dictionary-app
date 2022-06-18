@@ -3,27 +3,29 @@ import axios from 'axios';
 
 import './Main.css';
 
-export default function Main() {
-	const [word, setWord] = useState('Dictionary App');
-	const [partOfSpeech, setPartOfSpeech] = useState('powered by Dictionary API');
-	const [definition, setDefinition] = useState('');
-	const [userInput, setUserInput] = useState('');
+const placeholderDefinition = 'A reference work with a list of words from one or more languages, normally ordered alphabetically, explaining each word\'s meaning, and sometimes containing information on its etymology, pronunciation, usage, translations, and other data.'
 
-	const getVal = (val: { target: { value: any } }) => {
+export default function Main() {
+	const [word, setWord] = useState('dictionary');
+	const [partOfSpeech, setPartOfSpeech] = useState('noun');
+	const [definition, setDefinition] = useState(placeholderDefinition);
+	const [userInput, setUserInput] = useState('');
+  
+  const dictionaryAPI = `https://api.dictionaryapi.dev/api/v2/entries/en/${userInput}`;
+
+	const getVal = (val: { target: { value: string } }) => {
 		setUserInput(val.target.value);
 	};
 
-	const API = `https://api.dictionaryapi.dev/api/v2/entries/en/${userInput}`;
-
 	const getDefinition = () => {
 		axios
-			.get(API)
+			.get(dictionaryAPI)
 			.then((res) => {
 				setWord(res.data[0].word);
 				setPartOfSpeech(res.data[0].meanings[0].partOfSpeech);
 				setDefinition(res.data[0].meanings[0].definitions[0].definition);
 			})
-			.catch((error) => {
+			.catch((_error) => {
 				alert('Error! Word not found.');
 			});
 	};
