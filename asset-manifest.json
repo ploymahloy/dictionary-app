@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dictionaryapi/static/css/main.d553ac25.chunk.css",
-    "main.js": "/dictionaryapi/static/js/main.2c495329.chunk.js",
-    "main.js.map": "/dictionaryapi/static/js/main.2c495329.chunk.js.map",
+    "main.js": "/dictionaryapi/static/js/main.e6c13306.chunk.js",
+    "main.js.map": "/dictionaryapi/static/js/main.e6c13306.chunk.js.map",
     "runtime-main.js": "/dictionaryapi/static/js/runtime-main.857eb517.js",
     "runtime-main.js.map": "/dictionaryapi/static/js/runtime-main.857eb517.js.map",
     "static/js/2.02ff757c.chunk.js": "/dictionaryapi/static/js/2.02ff757c.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.857eb517.js",
     "static/js/2.02ff757c.chunk.js",
     "static/css/main.d553ac25.chunk.css",
-    "static/js/main.2c495329.chunk.js"
+    "static/js/main.e6c13306.chunk.js"
   ]
 }
