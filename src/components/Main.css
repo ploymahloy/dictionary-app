@@ -16,7 +16,8 @@ main {
   height: 375px;
   width: 750px;
 
-  border: 8px solid var(--blue);
+  border: 8px solid black;
+  border-color: var(--blue);
   border-radius: 15px;
 
   overflow: scroll;
