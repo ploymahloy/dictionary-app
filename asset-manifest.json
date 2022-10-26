@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dictionary-app/static/css/main.7068cad7.chunk.css",
+    "main.css": "/dictionary-app/static/css/main.8696f60a.chunk.css",
     "main.js": "/dictionary-app/static/js/main.12a79bd8.chunk.js",
     "main.js.map": "/dictionary-app/static/js/main.12a79bd8.chunk.js.map",
     "runtime-main.js": "/dictionary-app/static/js/runtime-main.7a5e176e.js",
@@ -8,14 +8,14 @@
     "static/js/2.02ff757c.chunk.js": "/dictionary-app/static/js/2.02ff757c.chunk.js",
     "static/js/2.02ff757c.chunk.js.map": "/dictionary-app/static/js/2.02ff757c.chunk.js.map",
     "index.html": "/dictionary-app/index.html",
-    "static/css/main.7068cad7.chunk.css.map": "/dictionary-app/static/css/main.7068cad7.chunk.css.map",
+    "static/css/main.8696f60a.chunk.css.map": "/dictionary-app/static/css/main.8696f60a.chunk.css.map",
     "static/js/2.02ff757c.chunk.js.LICENSE.txt": "/dictionary-app/static/js/2.02ff757c.chunk.js.LICENSE.txt",
     "static/media/logo.00aab024.png": "/dictionary-app/static/media/logo.00aab024.png"
   },
   "entrypoints": [
     "static/js/runtime-main.7a5e176e.js",
     "static/js/2.02ff757c.chunk.js",
-    "static/css/main.7068cad7.chunk.css",
+    "static/css/main.8696f60a.chunk.css",
     "static/js/main.12a79bd8.chunk.js"
   ]
 }
