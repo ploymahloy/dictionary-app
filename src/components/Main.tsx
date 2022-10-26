@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import './Main.css';
 
-const placeholderDefinition = 'A reference work with a list of words from one or more languages, normally ordered alphabetically, explaining each word\'s meaning, and sometimes containing information on its etymology, pronunciation, usage, translations, and other data.'
+const placeholderDefinition = 'A reference work with a list of words from one or more languages, normally ordered alphabetically, explaining each word\'s meaning, and sometimes containing information on its etymology, pronunciation, usage, translations, and other data.';
 
 export default function Main() {
 	const [word, setWord] = useState('dictionary');
@@ -37,22 +37,23 @@ export default function Main() {
 	};
 
 	return (
-		<div className="Main">
+		<main>
 			<div className="search">
 				<input
 					onChange={getVal}
 					onKeyPress={handleKeypress}
-					placeholder="Search..."
+          placeholder="Search..."
+          className="search_input"
 				/>
-				<button onClick={getDefinition} className="define">
+				<button onClick={getDefinition} className="search_btn">
 					Define
 				</button>
 			</div>
 			<div className="display">
-				<h1>{word}</h1>
-				<p className="part-of-speech">{partOfSpeech}</p>
+				<h1 className="word">{word}</h1>
+				<p className="part_of_speech">{partOfSpeech}</p>
 				<p className="definition">{definition}</p>
 			</div>
-		</div>
+		</main>
 	);
 }
